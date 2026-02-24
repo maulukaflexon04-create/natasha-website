@@ -47,42 +47,46 @@ nav a{
 
 /* HERO */
 .hero{
-  height:90vh;
+  height:90vh; /* makes it cover most of the viewport */
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
   padding:20px;
+
+  /* Background picture with soft overlay */
   background: 
-    linear-gradient(to right, rgba(255, 0, 136, 0.5), rgba(250, 208, 196, 0.5)),
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), /* dark overlay so text is readable */
     url('natasha-bg.jpg') no-repeat center center;
   background-size: cover;
+
   color:white;
 }
 
 .hero h1{
   font-size:3rem;
+  margin-bottom:15px;
 }
 
 .hero p{
-  margin-top:15px;
   font-size:1.2rem;
+  margin-bottom:20px;
 }
 
 .hero button{
-  margin-top:20px;
   padding:12px 25px;
   border:none;
   border-radius:25px;
-  background:white;
-  color:#ff4e88;
+  background:#ff4e88;
+  color:white;
   cursor:pointer;
   font-weight:bold;
+  transition:0.3s;
 }
 
 .hero button:hover{
-  background:#ffe6ef;
+  background:#ff1f6d;
 }
 
 /* SECTION */
@@ -227,3 +231,4 @@ function futureTrip(){
 </body>
 
 </html>
+
