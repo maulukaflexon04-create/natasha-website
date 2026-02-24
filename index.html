@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natasha | Explorer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#fdf6f9;
+  color:#333;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav h2{
+  color:#ff4e88;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(to right, #ff9a9e, #fad0c4);
+  color:white;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:1.2rem;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:white;
+  color:#ff4e88;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.hero button:hover{
+  background:#ffe6ef;
+}
+
+/* SECTION */
+.section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  width:250px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card h3{
+  color:#ff4e88;
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  background:#ff4e88;
+  color:white;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Natasha</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Passions</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Curious. Adventurous. Food Lover.</h1>
+  <p>Discovering knowledge. Exploring places. Enjoying every bite of life.</p>
+  <button onclick="message()">Explore More</button>
+</section>
+
+<section class="section">
+  <h2>Her Passions</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>📚 Knowledge</h3>
+      <p>She enjoys discovering new knowledge and growing her mind every day.</p>
+    </div>
+
+    <div class="card">
+      <h3>✈️ Travel</h3>
+      <p>Exploring new places and experiencing different cultures excites her.</p>
+    </div>
+
+    <div class="card">
+      <h3>🍽️ Food</h3>
+      <p>She enjoys good food and discovering new tastes around the world.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ by FLEXON
+</footer>
+
+<script>
+function message(){
+  alert("The world is better with your curiosity in it 💕");
+}
+</script>
+<section class="section">
+  <h2>Places She Would Love</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="victoria-falls2.jpg" width="100%" style="border-radius:10px;">
+      <h3>Victoria Falls</h3>
+      <p>Adventure and breathtaking views in Livingstone.</p>
+    </div>
+
+    <div class="card">
+      <img src="sourth-luangwa.jpg" width="100%" style="border-radius:10px;">
+      <h3>South Luangwa</h3>
+      <p>Wildlife, safari and unforgettable experiences.</p>
+    </div>
+
+    <div class="card">
+      <img src="the-royal.jpg" width="100%" style="border-radius:10px;">
+      <h3>The Royal Dil</h3>
+      <p>Modern vibes, great food and atmosphere.</p>
+    </div>
+
+    <div class="card">
+      <img src="cargo88,jpg.webp" width="100%" style="border-radius:10px;">
+      <h3>cargo88</h3>
+      <p>Elegant dining experience in Lusaka</p>
+    </div>
+
+  </div>
+</section>
+<section class="section" style="background:#fff0f5;">
+  <h2 style="color:#ff4e88;">A Future Adventure ✈️</h2>
+  <p style="max-width:600px;margin:20px auto;font-size:1.1rem;">
+    The world is full of beautiful places…  
+    Maybe one day, we’ll explore a few of them together.
+  </p>
+
+  <button onclick="futureTrip()" 
+    style="padding:12px 25px;border:none;border-radius:25px;
+    background:#ff4e88;color:white;cursor:pointer;">
+    Plan That Trip 😉
+  </button>
+</section>
+
+<script>
+function futureTrip(){
+  alert("Adventure is better when shared 💕");
+}
+</script>
+
+</body>
+</html>
